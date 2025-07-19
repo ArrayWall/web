@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallfinity - Your Ultimate Wallpaper Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #0f0f0f;
+        color: #f5f5f5;
+      }
+      header {
+        background: url('https://picsum.photos/1600/900?blur=2') center/cover
+          no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+      header h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin-bottom: 2rem;
+      }
+      header .btn {
+        background: #ff7e5f;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      header .btn:hover {
+        background: #feb47b;
+      }
+      section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .features,
+      .contribute {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .card {
+        background: #1c1c1c;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+      }
+      .card h3 {
+        margin-bottom: 1rem;
+      }
+      .tag-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+      .tag {
+        background: #222;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ArrayWall</h1>
+      <p>The Ultimate App for Stunning Wallpapers on iPhone,Android & iPad</p>
+      <a href="#download"><button class="btn">Download the App</button></a>
+    </header>
+
+    <section id="features">
+      <h2>🔥 Features</h2>
+      <div class="features">
+        <div class="card">
+          <h3>High-Quality Wallpapers</h3>
+          <p>Optimized for phones and tablets with proper resolution handling.</p>
+        </div>
+        <div class="card">
+          <h3>Smart Tag Filtering</h3>
+          <p>Explore categories like Nature, Minimal, Real, and more.</p>
+        </div>
+        <div class="card">
+          <h3>Bookmarks & Downloads</h3>
+          <p>Save your favorites and download instantly to your device.</p>
+        </div>
+        <div class="card">
+          <h3>Offline Ready</h3>
+          <p>Browse saved wallpapers even when you're offline.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contribute">
+      <h2>📤 Contribute Your Wallpaper</h2>
+      <div class="contribute">
+        <div class="card">
+          <h3>Upload Guidelines</h3>
+          <p>
+            Please upload a high-res image (3000x3000px preferred). Make sure it
+            looks good in these dimensions:
+          </p>
+          <ul>
+            <li>1080x1920 px (Phone - 16:9 or 19.5:9)</li>
+            <li>2732x2048 px (iPad - 4:3)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Use Tags</h3>
+          <p>Tag your wallpapers properly. Suggested tags:</p>
+          <div class="tag-grid">
+            <span class="tag">Gods</span>
+            <span class="tag">Nature</span>
+            <span class="tag">Minimal</span>
+            <span class="tag">Real</span>
+            <span class="tag">City</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Respect Copyright</h3>
+          <p>
+            Use AI tools like Firefly, DALL·E, or Canva. Avoid copying someone
+            else's art or commercial images without license.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <h2>📱 Get the App</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Download on iOS</h3>
+          <p>Coming soon to the App Store.</p>
+        </div>
+        <div class="card">
+          <h3>Android Support</h3>
+          <p>Also works great on Android via Expo Go or future Play Store release.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 ArrayWall. All rights reserved.
+    </footer>
+  </body>
+</html>
